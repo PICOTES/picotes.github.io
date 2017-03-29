@@ -12,7 +12,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		function cargarDatos() {
-// 		En la linea siguiente cambia la IP por la que esté usando tu arduino
+// 		En la linea siguiente cambia la IP por la que estÃ© usando tu arduino
 			$.getJSON("http://192.168.1.210").done( function(datos){ 
 				$("#tempVal").text(datos.temperatura);
 				$("#uptimeVal").text(datos.uptime);
@@ -23,5 +23,9 @@
 	<div>
 		<h2>Temperatura: <span id="tempVal"></span></h2>
 		<h4>Uptime: <span id="uptimeVal"></span></h4>
+		
+		<form method="get" action="http://aprenderaprogramar.com/accion.php">
+		<input type="submit" value="Enviar este formulario" />
+		</form>
 	</div>
 </body>
